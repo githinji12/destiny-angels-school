@@ -2,7 +2,7 @@ import { MapPin, Phone, Mail } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
 import { WaveDivider } from "@/components/WaveDivider";
 
-// ✅ This line is critical: It defines the page component
+// ✅ This is the required default export for Next.js pages
 export default function ContactPage() {
   return (
     <div className="pt-20">

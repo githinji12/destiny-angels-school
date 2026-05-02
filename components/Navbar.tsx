@@ -33,22 +33,30 @@ export function Navbar() {
           
           {/* Logo + School Name with Motto Tooltip */}
           <Link href="/" className="flex items-center gap-3 shrink-0 group relative">
+            
+            {/* ✅ UPDATED: Using /favicon.ico directly */}
             <Image
-              src="/images/logo.png"
+              src="/favicon.ico"
               alt="Destiny Angels Logo"
               width={140}
               height={140}
-              className={`h-12 w-auto md:h-14 transition-all duration-300 ${
+              className={`h-12 w-auto md:h-14 transition-all duration-300 object-contain ${
                 scrolled ? "opacity-100" : "opacity-90 drop-shadow-md"
               }`}
               priority
             />
-            <div className="hidden sm:block">
-              <span className={`font-heading font-bold text-lg md:text-xl leading-tight transition-colors duration-300 ${
+
+            {/* School Name Text */}
+            <div className="hidden sm:block leading-tight">
+              <span className={`font-heading font-bold text-lg md:text-xl transition-colors duration-300 block ${
                 scrolled ? "text-blue-900" : "text-white drop-shadow-sm"
               }`}>
-                Destiny Angels<br />
-                <span className="text-sm md:text-base font-medium opacity-90">Learning Centre</span>
+                Destiny Angels
+              </span>
+              <span className={`text-sm md:text-base font-medium block ${
+                scrolled ? "text-blue-900" : "text-white/90 drop-shadow-sm"
+              }`}>
+                Learning Centre
               </span>
             </div>
             
