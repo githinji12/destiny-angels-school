@@ -18,8 +18,7 @@ export function HeroSlider() {
   }, []);
 
   return (
-        <section className="relative h-[70vh] md:h-[80vh] overflow-hidden bg-blue-900">
-<div className="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-blue-900/30 to-transparent pointer-events-none" />
+    <section className="relative h-[70vh] md:h-[80vh] overflow-hidden bg-blue-900">
       <AnimatePresence mode="wait">
         <motion.div
           key={current}
@@ -33,10 +32,13 @@ export function HeroSlider() {
             src={slides[current].img}
             alt={slides[current].text}
             fill
-            priority={current === 0} // Loads fastest for SEO
+            priority={current === 0}
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-blue-900/40 backdrop-blur-[2px]" />
+          
+          {/* ✅ LIGHTER OVERLAY: Reduced from /80 & /40 to /50 & /15 */}
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/50 to-blue-900/15" />
+          
           <div className="relative z-10 h-full flex items-center justify-center text-center px-4">
             <motion.div
               key={current + "content"}
@@ -45,17 +47,18 @@ export function HeroSlider() {
               transition={{ delay: 0.3 }}
               className="max-w-3xl"
             >
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+              {/* Added drop-shadow-lg for crisp text over lighter backgrounds */}
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
                 {slides[current].text}
               </h1>
-              <p className="text-lg md:text-xl text-blue-100 mb-2">
-  Serving the Huruma community with hope, care, and opportunity.
-</p>
-<p className="text-sm md:text-base text-peach-200 italic font-medium mb-8">
-  "Early skills for better future"
-</p>
+              <p className="text-lg md:text-xl text-blue-100 mb-2 drop-shadow-md">
+                Serving the Huruma community with hope, care, and opportunity for learners from all backgrounds.
+              </p>
+              <p className="text-sm md:text-base text-peach-200 italic font-medium mb-8 drop-shadow-md">
+                "Early skills for better future"
+              </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="/contact" className="bg-peach-300 hover:bg-white text-blue-900 font-bold px-6 py-3 rounded-lg shadow-soft transition-all duration-300 hover:-translate-y-1">
+                <a href="/contact" className="bg-peach-300 hover:bg-white text-blue-900 font-bold px-6 py-3 rounded-lg shadow-soft transition-all duration-300 hover:-translate-y-1 drop-shadow-md">
                   Enroll a Child
                 </a>
                 <a href="/contact" className="bg-white/20 hover:bg-white/40 text-white font-semibold px-6 py-3 rounded-lg backdrop-blur-sm border border-white/30 transition-all duration-300 hover:-translate-y-1">
