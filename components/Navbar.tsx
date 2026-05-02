@@ -3,16 +3,28 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export function Navbar() {
+  const pathname = usePathname();
+  const isHome = pathname === "/";
+  
   const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState(!isHome); // Start solid on non-home pages
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 50);
+    // Reset state when route changes
+    setScrolled(!isHome);
+
+    const onScroll = () => {
+      // Force solid on non-home pages, scroll-based on home
+      setScrolled(!isHome || window.scrollY > 50);
+    };
+
     window.addEventListener("scroll", onScroll);
+    onScroll(); // Run immediately on mount/route change
     return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  }, [isHome]);
 
   const links = [
     { name: "Home", href: "/" },
@@ -24,16 +36,15 @@ export function Navbar() {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrolled
-        ? "bg-white/95 backdrop-blur-md shadow-lg"
+      scrolled 
+        ? "bg-white/95 backdrop-blur-md shadow-lg" 
         : "bg-transparent"
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
-
-          {/* Logo + Brand Name - Perfectly Aligned */}
+          
+          {/* Logo + Brand Name */}
           <Link href="/" className="flex items-center gap-3 shrink-0 group relative">
-            {/* Logo Container - Fixed size prevents shifting */}
             <div className="relative h-10 w-10 md:h-12 md:w-12 flex-shrink-0 bg-white/10 rounded-md overflow-hidden">
               <Image
                 src="/favicon.ico"
@@ -44,7 +55,6 @@ export function Navbar() {
               />
             </div>
 
-            {/* Text Stack - Vertically Centered */}
             <div className="flex flex-col justify-center leading-tight">
               <span className={`font-heading font-bold text-lg md:text-xl tracking-tight transition-colors duration-300 ${
                 scrolled ? "text-blue-900" : "text-white drop-shadow-md"
@@ -58,7 +68,6 @@ export function Navbar() {
               </span>
             </div>
 
-            {/* Motto Tooltip (Desktop Only) */}
             <span className="hidden md:block absolute top-full left-0 mt-3 px-3 py-1.5 rounded-md text-[10px] font-semibold bg-blue-900/90 text-peach-300 opacity-0 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap pointer-events-none shadow-lg z-50 backdrop-blur-sm">
               "Early skills for better future"
             </span>
