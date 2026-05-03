@@ -1,6 +1,7 @@
 import { MapPin, Phone, Mail } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
 import { WaveDivider } from "@/components/WaveDivider";
+import { GoogleMaps } from "@/components/GoogleMaps";
 
 // ✅ This is the required default export for Next.js pages
 export default function ContactPage() {
@@ -13,21 +14,21 @@ export default function ContactPage() {
         </p>
       </header>
       
-      <WaveDivider className="-mt-[1px]" />
+      <WaveDivider className="-mt-px" />
       
       <section className="py-16 px-4 max-w-6xl mx-auto grid md:grid-cols-2 gap-10 bg-white">
         <div>
           <h2 className="text-2xl mb-6">Get in Touch</h2>
           <div className="space-y-5 text-gray-700">
             <div className="flex items-start gap-3">
-              <MapPin className="text-peach-500 mt-1 flex-shrink-0" size={20} />
+              <MapPin className="text-peach-500 mt-1 shrink-0" size={20} />
               <div>
                 <h4 className="font-semibold text-blue-900">Location</h4>
                 <p>Huruma, Kiamaiko, Mathare Sub-County<br/>Nairobi, Kenya</p>
               </div>
             </div>
             <div className="flex items-center gap-3">
-              <Phone className="text-peach-500 flex-shrink-0" size={20} />
+              <Phone className="text-peach-500 shrink-0" size={20} />
               <div>
                 <h4 className="font-semibold text-blue-900">Phone / WhatsApp</h4>
                 <a href="tel:+254728654003" className="text-blue-700 hover:text-peach-500 transition font-medium">
@@ -36,7 +37,7 @@ export default function ContactPage() {
               </div>
             </div>
             <div className="flex items-start gap-3">
-              <Mail className="text-peach-500 flex-shrink-0" size={20} />
+              <Mail className="text-peach-500 shrink-0" size={20} />
               <div>
                 <h4 className="font-semibold text-blue-900">Postal Address</h4>
                 <p>P.O. Box 15488-004001<br/>Nairobi, Kenya</p>
@@ -62,11 +63,14 @@ export default function ContactPage() {
       </section>
 
       {/* Map Placeholder */}
-      <div className="max-w-6xl mx-auto px-4 pb-16">
-        <div className="h-64 rounded-2xl overflow-hidden shadow-card bg-blue-100 flex items-center justify-center text-blue-700 border border-blue-200">
-          <p className="text-center">🗺️ Google Maps Embed<br/>(Huruma, Mathare)</p>
-        </div>
-      </div>
+    <div className="max-w-6xl mx-auto px-4 pb-16">
+  <div className="bg-white p-6 rounded-2xl shadow-card border border-blue-100">
+    <h2 className="text-2xl font-bold text-blue-900 mb-6 text-center">
+      Find Our Locations
+    </h2>
+    <GoogleMaps />
+  </div>
+</div>
     </div>
   );
 }

@@ -10,13 +10,13 @@ export default function AboutPage() {
         <p className="text-blue-100 max-w-2xl mx-auto text-lg">Rooted in community, driven by purpose.</p>
       </header>
       
-      <WaveDivider className="-mt-[1px]" />
+      <WaveDivider className="-mt-px" />
       
       <section className="py-16 px-4 max-w-5xl mx-auto space-y-12">
         <div className="bg-white p-6 md:p-8 rounded-2xl shadow-card border border-blue-100">
           <h2 className="text-2xl mb-4">Our Story</h2>
           <p className="text-gray-600 leading-relaxed mb-4">
-            Destiny Angels Learning Center was founded with a simple yet profound vision: to provide quality, accessible education to children in Huruma, Kiamaiko, regardless of their socioeconomic background. What began as a small initiative has grown into a trusted institution serving learners from Pre-Primary through Secondary school.
+            Destiny Angels Learning Centre was founded with a simple yet profound vision: to provide quality, accessible education to children in Huruma, Kiamaiko, regardless of their socioeconomic background. What began as a small initiative has grown into a trusted institution serving learners from Pre-Primary through Secondary school.
           </p>
           <p className="text-gray-600 leading-relaxed">
             We believe that education is the most powerful tool for empowerment. By combining academic rigor with life skills and moral grounding, we prepare students not just to pass exams, but to thrive as responsible, resilient, and compassionate members of society.

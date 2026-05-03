@@ -45,14 +45,15 @@ export function Navbar() {
           
           {/* Logo + Brand Name */}
           <Link href="/" className="flex items-center gap-3 shrink-0 group relative">
-            <div className="relative h-10 w-10 md:h-12 md:w-12 flex-shrink-0 bg-white/10 rounded-md overflow-hidden">
-              <Image
-                src="/favicon.ico"
-                alt="Destiny Angels Logo"
-                fill
-                className="object-contain p-0.5"
-                priority
-              />
+            <div className="relative h-10 w-10 md:h-12 md:w-12 shrink-0 bg-white/10 rounded-md overflow-hidden">
+            <Image
+  src="/favicon.ico"
+  alt="Destiny Angels Logo"
+  fill
+  sizes="(max-width: 768px) 40px, 48px"
+  className="object-contain p-0.5"
+  priority
+/>
             </div>
 
             <div className="flex flex-col justify-center leading-tight">
