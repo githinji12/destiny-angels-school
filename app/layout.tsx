@@ -16,7 +16,9 @@ const inter = Inter({
   variable: "--font-inter" 
 });
 
-// ✅ Single, properly typed metadata export with Open Graph
+// ✅ Fix 2: Add metadataBase
+export const metadataBase = new URL("https://destinyangels.vercel.app");
+
 export const metadata: Metadata = {
   title: "Destiny Angels Learning Centre | Early Skills for Better Future",
   description: "Quality education & life skills for learners in Huruma, Kiamaiko. Enroll today!",
@@ -39,7 +41,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="!m-0 !p-0">
+    // ✅ Fix 3: Add data-scroll-behavior
+    <html lang="en" className="m-0! p-0!" data-scroll-behavior="smooth">
       <head>
         <script
           type="application/ld+json"
@@ -68,8 +71,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }}
         />
       </head>
-      {/* ✅ Force zero margin/padding on body */}
-      <body className="!m-0 !p-0 min-h-screen flex flex-col bg-background-light font-body text-gray-700 antialiased">
+      <body className="m-0! p-0! min-h-screen flex flex-col bg-background-light font-body text-gray-700 antialiased">
         <Navbar />
         <FloatingContact />
         <main className="flex-1">{children}</main>

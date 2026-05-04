@@ -33,12 +33,13 @@ export function HeroSlider() {
             alt={slides[current].text}
             fill
             priority={current === 0}
+            loading={current === 0 ? "eager" : "lazy"}
             className="object-cover"
             sizes="100vw"
           />
           
-          {/* Darker overlay for better text contrast */}
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-950/70 via-blue-900/50 to-transparent" />
+          {/* Darker overlay for maximum white text contrast */}
+          <div className="absolute inset-0 bg-linear-to-r from-blue-950/80 via-blue-900/60 to-transparent" />
           
           <div className="relative z-10 h-full flex items-center justify-center text-center px-4">
             <motion.div
@@ -48,22 +49,22 @@ export function HeroSlider() {
               transition={{ delay: 0.3, duration: 0.6 }}
               className="max-w-4xl"
             >
-              {/* Main Heading - Pure White with Strong Shadow */}
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-white drop-shadow-[0_4px_6px_rgba(0,0,0,0.9)]">
+              {/* ✅ Main Heading - Pure White with Strong Shadow */}
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-white drop-shadow-[0_4px_8px_rgba(0,0,0,0.95)]">
                 {slides[current].text}
               </h1>
               
-              {/* Subtext - Light Blue with Shadow */}
-              <p className="text-base sm:text-lg md:text-xl text-blue-50 mb-3 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+              {/* ✅ Subtext - Pure White */}
+              <p className="text-base sm:text-lg md:text-xl text-white mb-3 drop-shadow-[0_2px_4px_rgba(0,0,0,0.85)]">
                 Serving the Huruma community with hope, care, and opportunity for learners from all backgrounds.
               </p>
               
-              {/* Motto - Peach Color with Shadow */}
-              <p className="text-sm sm:text-base md:text-lg text-peach-300 italic font-semibold mb-8 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+              {/* ✅ Motto - Pure White with Strong Shadow */}
+              <p className="text-sm sm:text-base md:text-lg text-white italic font-semibold mb-8 drop-shadow-[0_3px_6px_rgba(0,0,0,0.9)]">
                 "Early skills for better future"
               </p>
               
-              {/* CTA Buttons */}
+              {/* CTA Buttons - Kept brand colors for visual interest */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 
                   href="/contact" 

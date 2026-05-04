@@ -17,33 +17,33 @@ const branches: Branch[] = [
     id: "huruma",
     name: "Main Branch - Huruma",
     address: "Kiamaiko, Mathare Sub-County, Nairobi",
-    lat: -1.2634,
-    lng: 36.8594,
-    embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8208!2d36.8572!3d-1.2634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMTUnNDguMiJTIDM2wrA1MScyNi4xIkU!5e0!3m2!1sen!2ske!4v1234567890"
+    lat: -1.2248,
+    lng: 36.8444,
+    embedUrl: "https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d127645.01791073327!2d36.84439995790846!3d-1.224757783776005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sdestiny%20angels%20learning%20centre!5e0!3m2!1sen!2ske!4v1777914340664!5m2!1sen!2ske"
   },
   {
     id: "mwihoko",
     name: "Mwihoko Branch",
     address: "Mwihoko, Nairobi",
-    lat: -1.2456,
-    lng: 36.8234,
-    embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8208!2d36.8212!3d-1.2456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMTQnNDQuMiJTIDM2wrA0OScxNi4zIkU!5e0!3m2!1sen!2ske!4v1234567890"
+    lat: -1.1934,
+    lng: 36.9596,
+    embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31911.622843349116!2d36.95958881612718!3d-1.1934209481556153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f41ac9c130a93%3A0xa36317cab49f050a!2sDestiny%20Angels%20school!5e0!3m2!1sen!2ske!4v1777914617872!5m2!1sen!2ske"
   },
   {
     id: "kariobangi",
     name: "Kariobangi South",
     address: "Kariobangi South, Nairobi",
-    lat: -1.2789,
-    lng: 36.8912,
-    embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8208!2d36.8890!3d-1.2789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMTYnNDQuMCJTIDM2wrA1MycyOC4zIkU!5e0!3m2!1sen!2ske!4v1234567890"
+    lat: -1.2248,
+    lng: 36.8444,
+    embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127645.01791073327!2d36.84439995790848!3d-1.224757783776005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f15ffd773e43b%3A0xc7191b80c179b526!2sDestiny%20Youngstars%20Learning%20Center!5e0!3m2!1sen!2ske!4v1777914724418!5m2!1sen!2ske"
   },
   {
     id: "githurai",
     name: "Githurai 44",
     address: "Githurai 44, Nairobi",
-    lat: -1.2123,
-    lng: 36.8678,
-    embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8208!2d36.8656!3d-1.2123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMTInNDQuMyJTIDM2wrA1MScwNC4xIkU!5e0!3m2!1sen!2ske!4v1234567890"
+    lat: -1.2070,
+    lng: 36.9282,
+    embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.9330993039935!2d36.92823217496561!3d-1.2069657987815106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3f3acf6ed5b5%3A0xb421004658d4207b!2sDestinyland%20learning%20centre!5e0!3m2!1sen!2ske!4v1777915029275!5m2!1sen!2ske"
   },
 ];
 
