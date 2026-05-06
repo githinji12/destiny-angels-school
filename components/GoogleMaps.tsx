@@ -17,9 +17,10 @@ const branches: Branch[] = [
     id: "huruma",
     name: "Main Branch - Huruma",
     address: "Kiamaiko, Mathare Sub-County, Nairobi",
-    lat: -1.2248,
-    lng: 36.8444,
-    embedUrl: "https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d127645.01791073327!2d36.84439995790846!3d-1.224757783776005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sdestiny%20angels%20learning%20centre!5e0!3m2!1sen!2ske!4v1777914340664!5m2!1sen!2ske"
+    lat: -1.2586,
+    lng: 36.8755,
+    // ✅ UPDATED: New accurate embed URL for Huruma
+    embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8557061185356!2d36.875541399999996!3d-1.2586238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f142465ac8f61%3A0x52edfb814630450d!2sAngels%20Of%20Mercy!5e0!3m2!1sen!2ske!4v1778071099510!5m2!1sen!2ske"
   },
   {
     id: "mwihoko",
@@ -41,9 +42,10 @@ const branches: Branch[] = [
     id: "githurai",
     name: "Githurai 44",
     address: "Githurai 44, Nairobi",
-    lat: -1.2070,
-    lng: 36.9282,
-    embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.9330993039935!2d36.92823217496561!3d-1.2069657987815106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3f3acf6ed5b5%3A0xb421004658d4207b!2sDestinyland%20learning%20centre!5e0!3m2!1sen!2ske!4v1777915029275!5m2!1sen!2ske"
+    lat: -1.2032,
+    lng: 36.9034,
+    // ✅ UPDATED: New accurate embed URL for Githurai 44
+    embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.938546949468!2d36.90336669999999!3d-1.2032460999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3fc8d8dd2ca5%3A0xb885f4041d89f420!2sLins%20education%20centre!5e0!3m2!1sen!2ske!4v1778071155722!5m2!1sen!2ske"
   },
 ];
 
