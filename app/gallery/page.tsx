@@ -6,10 +6,11 @@ import Image from "next/image";
 const galleryImages = [
   // Existing images
   { src: "/images/learners.jpg", alt: "Engaged learners in classroom" },
-  { src: "/images/students-class.jpg", alt: "Students studying together" },
-  { src: "/images/outside-learning.jpg", alt: "Outdoor learning session" },
-  { src: "/images/hands-on-learning.jpg", alt: "Hands-on educational activity" },
-  { src: "/images/sports-day.jpg", alt: "Students participating in sports day" },
+  {src:"/images/excited-students.jpg", alt: "Excited adorable students" },
+  //{ src: "/images/students-class.jpg", alt: "Students studying together" },
+  //{ src: "/images/outside-learning.jpg", alt: "Outdoor learning session" },
+  //{ src: "/images/hands-on-learning.jpg", alt: "Hands-on educational activity" },
+  //{ src: "/images/sports-day.jpg", alt: "Students participating in sports day" },
   { src: "/images/graduation-day.jpg", alt: "Joyful graduation ceremony" },
   { src: "/images/staffs.jpg", alt: "Dedicated teaching staff" },
   { src: "/images/community-support.jpg", alt: "Community engagement and support" },
@@ -19,8 +20,8 @@ const galleryImages = [
   { src: "/images/another-one1.jpg", alt: "Creative arts and crafts session" },
   { src: "/images/happy-students.jpg", alt: "Happy students celebrating achievement" },
   { src: "/images/one-with-the-teacher.jpg", alt: "Teacher guiding student one-on-one" },
-  { src: "/images/out-to-enjoy.jpg", alt: "Students enjoying outdoor recreational time" },
-  { src: "/images/staff-out.jpg", alt: "Teaching staff team building activity" },
+  //{ src: "/images/out-to-enjoy.jpg", alt: "Students enjoying outdoor recreational time" },
+  // { src: "/images/staff-out.jpg", alt: "Teaching staff team building activity" },
   { src: "/images/students-gathering.jpg", alt: "Students gathering for assembly event" },
 ];
 
