@@ -94,7 +94,7 @@ const pillars = [
     icon: Eye,
     title: "Our Vision",
     desc: "A community where every child, regardless of background, has access to education that leads to dignity, opportunity, and lifelong success.",
-    gradient: "from-peach-400 to-peach-600",
+    gradient: "from-blue-600 to-peach-400",
   },
   {
     icon: HeartHandshake,
