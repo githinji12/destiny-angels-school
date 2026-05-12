@@ -238,6 +238,7 @@ export function Footer() {
                   <Phone size={18} className="text-peach-300 shrink-0" />
                 </motion.div>
                 <span className="text-sm">+254 728 654 003</span>
+                <span className="text-sm">+254 722 260 879</span>
               </motion.a>
               
               <motion.a

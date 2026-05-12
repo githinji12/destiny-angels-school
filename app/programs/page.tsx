@@ -717,7 +717,9 @@ export default function ProgramsPage() {
                   </motion.div>
                   <h3 className="font-bold text-blue-900 text-lg mb-1">{branch.name}</h3>
                   <p className="text-gray-600 text-sm mb-3">{branch.location}</p>
-                  <p className="text-blue-700 text-sm font-medium mb-4">📞 +254 728 654 003</p>
+                  <p className="text-blue-700 text-sm font-medium mb-4">
+                     📞 {branch.name === "Githurai 44" ? "+254 722 260 879" : "+254 728 654 003"}
+                  </p>
                   <span className="inline-flex items-center gap-1 text-sm font-medium text-blue-700 group-hover:text-peach-600 transition-colors">
                     Contact Branch
                     <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />

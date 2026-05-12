@@ -65,7 +65,7 @@ const branches = [
   {
     name: "Githurai 44",
     address: "Githurai 44, Nairobi",
-    phone: "+254 728 654 003",
+    phone: "+254 722 260 879",
     icon: MapPin,
   },
 ];
